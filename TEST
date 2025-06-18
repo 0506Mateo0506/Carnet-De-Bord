@@ -143,7 +143,7 @@
     <div class="container">
         <h1>C'était un plaisir !</h1>
         <p>Merci à vous de m'avoir accepté en stage de seconde dans votre entreprise. Ce stage m'a permis d'en apprendre d'avantage par rapport à l'informatique et au codage en règle générale. </p>
-        <a class="btn-home" href='CARNET-DE-BORD.html'>Retour à l'acceuil</a>
+        <a class="btn-home" href='index.html'>Retour à l'acceuil</a>
     </div>
 </body>
 </html>
