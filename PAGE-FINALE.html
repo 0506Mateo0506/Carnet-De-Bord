@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remerciements !</title>
+    <style>
+        body {
+            background: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 100px 20px;
+            color: #333;
+        }
+
+        .container {
+            background: rgb(147, 199, 27);
+            padding: 50px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .btn-home {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-home:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>C'était un plaisir !</h1>
+        <p>Merci à vous de m'avoir accepté en stage de seconde dans votre entreprise. Ce stage m'a permis d'en apprendre d'avantage par rapport à l'informatique et au codage en règle générale. Merci à toute l'équipe de m'avoir si bien accueilli, je vous en remercie, une très bonne ambiance et de la convivialité, 
+         <br>                                                                              <b>Bon courage à tous,
+                                                                                       <br>        Merci encore !  </b> 
+
+           
+        </p>
+        <a class="btn-home" href='CARNET-DE-BORD.html'>Retour à l'accueil</a>
+    </div>
+
+
+<meta charset="UTF-8">
+    <title>Bienvenue 🎉</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #fefefe;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 100px;
+            font-size: 3em;
+            color: #2c3e50;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="confetti-canvas"></canvas>
+
+    <script>
+        // Simple confetti effect
+        const canvas = document.getElementById('confetti-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const confettis = [];
+
+        for (let i = 0; i < 150; i++) {
+            confettis.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height - canvas.height,
+                r: Math.random() * 6 + 4,
+                d: Math.random() * 5 + 2,
+                color: `hsl(${Math.random() * 360}, 100%, 50%)`,
+                tilt: Math.random() * 10 - 5,
+                tiltAngle: 0,
+            });
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            confettis.forEach((c, i) => {
+                ctx.beginPath();
+                ctx.lineWidth = c.r;
+                ctx.strokeStyle = c.color;
+                ctx.moveTo(c.x + c.tilt, c.y);
+                ctx.lineTo(c.x, c.y + c.tilt + c.r / 2);
+                ctx.stroke();
+            });
+
+            update();
+        }
+
+        function update() {
+            confettis.forEach(c => {
+                c.y += c.d;
+                c.tiltAngle += 0.05;
+                c.tilt = Math.sin(c.tiltAngle) * 10;
+
+                if (c.y > canvas.height) {
+                    c.y = -10;
+                    c.x = Math.random() * canvas.width;
+                }
+            });
+        }
+
+        function animate() {
+            draw();
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+        window.addEventListener("resize", () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+
+    <button onclick="generatePDF()" style="right:5px; bottom: 5px; position:absolute;">Télécharger le PDF</button>
+		<script>
+			function generatePDF() {
+			  const element = document.getElementById('mon_carnet');
+			  html2pdf().from(element).save();
+
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jour 2 - Matin - Carnet de Bord</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>	
+</head>
+<body>
+    <header>
+        <h1>Le carnet de bord de mon stage d'observation.</h1>
+		<img src="LOGO ACCSI UNIS.png" style="width:20%; height:20%; float:right; margin-right:10px;"/>
+    </header>
+    <nav>
+        <a href="CARNET-DE-BORD.html">Accueil</style>
+<body>
+
+<span style='font-size:20px;'>&#127968;</span>
+
+</body>
+</html></a>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td colspan=2 style="text-align:center;"><u>Lundi 16 juin</u></td></tr>
+		<tr>
+			<td><a href="JOUR1-matin.html">matin</a></td>
+			<td><a href="JOUR1-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+	    <table style="display:inline;"><thead></thead><tbody>
+		<tr><td colspan=2 style="text-align:center;"><u>Mardi 17 juin</u></td></tr>
+		<tr>
+			<td><a href="JOUR2-matin.html">matin</a></td>
+			<td><a href="JOUR2-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td class="texte-rouge" colspan=2 style="text-align:center;"><u>Mercredi 18 juin</u></td></tr>
+		<tr>
+			<td><a class="texte-rouge" href="JOUR3-matin.html">matin</a></td>
+			<td><a href="JOUR3-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td colspan=2 style="text-align:center;"><u>Jeudi 19 juin</u></td></tr>
+		<tr>
+			<td><a href="JOUR4-matin.html">matin</a></td>
+			<td><a href="JOUR4-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td colspan=2 style="text-align:center;"><u>Vendredi 20 juin</u></td></tr>
+		<tr>
+			<td><a href="JOUR5-matin.html">matin</a></td>
+			<td><a href="JOUR5-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+    </nav>
+    <div class="day-entry" id="mon_carnet">
+        <h2><i><u>Jour 3</u> : Matin</i></h2>
+        <p>Vu du module <u>Opux Dux</u> avec <i><b>Alexis</b></i> du Pôle Digital à 10h,
+		 pour un <b>"point bilan"</b> sur le projet sur lequel il travaille.
+		 Ensuite, j'ai pus faire un autre <b>"point bilan"</b> avec <i><b>Antoine</b></i> à 11h. Il a fait un Bac S spé math, il n'avait aucune connaissance en infomatique avant la terminale, il a fait un DUT, ensuite a passé un diplome de 3e année de license a la fac, puis un master avec spé E-Service. Actuellement, il est en CDI depuis 1 an dans la boite, 
+		et est développeur d'applications mobile.<br>
+		<br><br> J'ai pus posé quelques questions à <i><b>Alexis</b></i> par rapport a son parcours, car son travail m'a interéssé, il est en alternance et est sur ça dernière année d'alternance, il a eu une proposition de rentré en tant qu'employé dans la boïte, il m'a dit qu'il ne resterait pas toujours un développeur et il avait un autre but ou une montée.  </p>
+		<br>Le module <u>Opux Dux</u> est un logiciel de <b>"tri"</b>,
+        <br>
+
+
+		 Il sert à organiser les programmes de travaille, l'emploi du temps des employers, leurs tâches de travaillent,
+		 si ils peuvent travailler sur un projet ou si ils sont déjà occupé sur un autre ou tout simplement si ils sont en congés. 	
+		Cela va aussi servir à renseigner es infos sur des applications sur lequel des employers bossent pour donner au client un aperçu du travaille demandé par le client (si j'ai bien compris)	
+	<br> <br> et  l'Appli mobile : <i>My Unis</i>, fait par l'appli, FLUTTER, Flutter est un logiciel de code, il comprend une intellinence artificielle qui permet de faire des recherches par rapport aux codes a faire pour la création de l'application mobile. <br>
+		Les intelligences présentes sur le logiciel sont en "rajout", ce sont 2 choses diférentes : <br> <b><u>L'IA</u></b></u> permet de répondre au besoin de l'utilisateur, en l'occurance Antoine, par rapport aux lignes de codes à mettre en place pour le bon fonctionnement de l'appli,
+		<br> Et <b><u>Flutter,</u></b> est le logiciel qui va permettre de coder cette appli, les lignes de codes vont être rentrés dans le lociel avec des consignes bien précises, et l'appli va éxécuter ces commandes. 	
+	
+	
+	
+	
+	</div>
+	<div>
+		<button onclick="generatePDF()" style="right:5px; bottom: -80px; position:absolute;">Télécharger le PDF</button>
+		<script>
+			function generatePDF() {
+			  const element = document.getElementById('mon_carnet');
+			  html2pdf().from(element).save();
+			}
+		</script>
+    </div>
+</body>
+</html>

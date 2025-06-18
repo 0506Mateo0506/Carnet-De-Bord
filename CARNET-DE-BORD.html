@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnet de Bord</title>
+	<link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Le carnet de bord de mon stage d'observation.</h1>
+		
+		<img src="LOGO ACCSI UNIS.png" style="width:20%; height:20%; float:right; margin-right:10px;"/>
+    </header>
+    <nav>
+        <a href="CARNET-DE-BORD.html">Accueil<style>
+</style>
+<body>
+
+<span style='font-size:20px;'>&#127968;</span>
+
+
+</body>
+</html></a>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td colspan=2 style="text-align:center;"><u>Lundi 16 juin</u></td></tr>
+		<tr>
+			<td><a href="JOUR1-matin.html">matin</a></td>
+			<td><a href="JOUR1-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td colspan=2 style="text-align:center;"><u>Mardi 17 juin</u></td></tr>
+		<tr>
+			<td><a href="JOUR2-matin.html">matin</a></td>
+			<td><a href="JOUR2-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td colspan=2 style="text-align:center;"><u>Mercredi 18 juin</u></td></tr>
+		<tr>
+			<td><a href="JOUR3-matin.html">matin</a></td>
+			<td><a href="JOUR3-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td colspan=2 style="text-align:center;"><u>Jeudi 19 juin</u></td></tr>
+		<tr>
+			<td><a href="JOUR4-matin.html">matin</a></td>
+			<td><a href="JOUR4-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td colspan=2 style="text-align:center;"><u>Vendredi 20 juin</u></td></tr>
+		<tr>
+			<td><a href="JOUR5-matin.html">matin</a></td>
+			<td><a href="JOUR5-apres-midi.html">après-midi</a></td>
+		</tr> 
+		</tbody></table>
+    </nav>
+    <div class="day-entry" id="mon_carnet">
+        <h2><b>Bienvenue dans mon Carnet de Bord</b></h2>
+		<p>Ce site est un <i>carnet de bord</i> où je partage mes explorations jour après jour, lors de mon stage de découverte du 16 au 20 juin 2025 dans la société <i><b><u>UNIS</u></b></i>.</p>
+		<p>Cliquez sur les créneaux <u>(matin/après-midi)</u> ci-dessus pour lire et comprendre le déroulement de mon stage tout au long de la semaine.</p>
+	</div>
+	<div>
+		
+		<button onclick="generatePDF()" style="right:5px; bottom: 5px; position:absolute;">Télécharger le PDF</button>
+		<button class="bounce-btn" onclick="window.location.href='PAGE-FINALE.html'" style="left:550px; bottom: 90px; position:absolute;">REMERCIEMENT</button>
+		
+	
+
+		<script>
+			function generatePDF() {
+			  const element = document.getElementById('mon_carnet');
+			  html2pdf().from(element).save();
+			}
+		</script>
+    
+</div>
+</body>
+</html>
