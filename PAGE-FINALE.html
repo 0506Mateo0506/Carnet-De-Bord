@@ -46,7 +46,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div  class="container" id="mon_carnet">
         <h1>C'était un plaisir !</h1>
         <p>Merci à vous de m'avoir accepté en stage de seconde dans votre entreprise. Ce stage m'a permis d'en apprendre d'avantage par rapport à l'informatique et au codage en règle générale. Merci à toute l'équipe de m'avoir si bien accueilli, je vous en remercie, une très bonne ambiance et de la convivialité, 
          <br>                                                                              <b>Bon courage à tous,
@@ -147,12 +147,6 @@
             canvas.height = window.innerHeight;
         });
     </script>
-
-    <button onclick="generatePDF()" style="right:5px; bottom: 5px; position:absolute;">Télécharger le PDF</button>
-		<script>
-			function generatePDF() {
-			  const element = document.getElementById('mon_carnet');
-			  html2pdf().from(element).save();
 
 
 
